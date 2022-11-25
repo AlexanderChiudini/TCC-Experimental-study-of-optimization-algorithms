@@ -32,3 +32,4 @@
 
 + [Heuristics for the mirrored traveling tournament problem](https://reader.elsevier.com/reader/sd/pii/S0377221705007368?token=7ABA0E6A1F827C94844D5343F930D01A0CAAE5D12A1325A00030CD1756D3F82E30FFFE204299E5CDC8D4E7461BAFC52B&originRegion=us-east-1&originCreation=20221125212122)
 + [A Constructive Heuristic for the Travelling Tournament Problem](https://patatconference.org/patat2006/proceedings/3_26.pdf)
++ [Sports scheduling and other topics in sports analytics: a survey with special reference to Latin America](https://link.springer.com/content/pdf/10.1007/s11750-020-00576-9.pdf)
