@@ -27,3 +27,8 @@
 [Regulamento FIBA](https://www.cbb.com.br/wp-content/uploads/Regras-Oficiais-de-Basketball-FIBA-2020-Traduzida-para-Portugues.pdf) - Não achei algo sobre intervalo de dias entre jogos
 
 [Tabela Flamengo](https://lnb.com.br/nbb/tabela-de-jogos/?season%5B%5D=71&team%5B%5D=NDA%3D) - Intervalo mínimo de 2 dias
+
+### Artigos (constructive heuristics for TTP)
+
++ [Heuristics for the mirrored traveling tournament problem](https://reader.elsevier.com/reader/sd/pii/S0377221705007368?token=7ABA0E6A1F827C94844D5343F930D01A0CAAE5D12A1325A00030CD1756D3F82E30FFFE204299E5CDC8D4E7461BAFC52B&originRegion=us-east-1&originCreation=20221125212122)
++ [A Constructive Heuristic for the Travelling Tournament Problem](https://patatconference.org/patat2006/proceedings/3_26.pdf)
