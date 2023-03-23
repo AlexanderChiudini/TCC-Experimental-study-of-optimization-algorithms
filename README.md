@@ -3,7 +3,7 @@
 ## Dados sobre o problema
 
 - Braço robótico de 8 eixos que pode imprimir um pixel do cartão por vez
-- Mover o braço e mudar a cor é [caro](/TCC-Experimental-study-of-optimization-algorithms/edit/main/README.md/#teste)
+- Mover o braço e mudar a cor é caro
 - É preciso gastar o mínimo de tempo possível
 - Cada elo do braço da impressora pode ser movido independentemente a cada etapa
 
@@ -14,7 +14,7 @@
 	- Essa condição significa que pelo menos um dos componentes do vetor deve ser igual a mais (positivo) ou menos (negativo) o comprimento do vetor.
 - A posição do braço é a soma desses vetores de deslocamento e indica a localização da ponta do braço
 - A base do braço (a origem do primeiro vetor) está em (0,0), que é o ponto médio da imagem
-- #teste O braço pode ser reconfigurado passo a passo girando qualquer um ou todos os links em uma unidade
+- O braço pode ser reconfigurado passo a passo girando qualquer um ou todos os links em uma unidade
 	- Incidindo em um custo total de reconfiguração igual à raiz quadrada do número de links alterados
 	- Além disso, incorre em um custo de cor igual à soma das diferenças absolutas nos componentes de cor de uma etapa para a próxima e multiplicada por um fator de escala de 3,0
 
