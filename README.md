@@ -1,35 +1,51 @@
-# TCC-TIMETABLING
+# TCC-Experimental-study-of-optimization-algorithms
 
-  Aplicação de heurísticas construtivas para solução de problemas envolvendo timetabling
+## Dados sobre o problema
 
-## Artigos relacionados
-[Heurísticas Construtivas](http://www.decom.ufop.br/prof/marcone/Disciplinas/InteligenciaComputacional/HeuristicasConstrutivas.pdf)
+- Braço robótico de 8 eixos que pode imprimir um pixel do cartão por vez
+- Mover o braço e mudar a cor é [caro](/TCC-Experimental-study-of-optimization-algorithms/edit/main/README.md/#teste)
+- É preciso gastar o mínimo de tempo possível
+- Cada elo do braço da impressora pode ser movido independentemente a cada etapa
 
-[Recent research directions in automated timetabling](https://www.sciencedirect.com/science/article/abs/pii/S0377221702000693?via%3Dihub)
+## Dados sobre a avaliação
 
-[ALGORITMO HÍBRIDO ITERATED LOCAL SEARCH E SIMULATED ANNEALING PARA O PROBLEMA DE TABELA-HORÁRIO DE UNIVERSIDADES](http://www.din.uem.br/sbpo/sbpo2017/pdf/168562.pdf)
+- Um braço robótico com oito links com comprimentos [64,32,16,8,4,2,1,1] deve "imprimir" cada ponto de uma imagem com dimensões 257*257
+- A configuração do braço é descrita por uma lista de vetores de deslocamento, como [(64, -44), (32,10), (-2,16),...,(0,1),(-1,0)], onde um vetor (x,y)de tamanho l deve satisfazer max(|x|, |y|)=l
+	- Essa condição significa que pelo menos um dos componentes do vetor deve ser igual a mais (positivo) ou menos (negativo) o comprimento do vetor.
+- A posição do braço é a soma desses vetores de deslocamento e indica a localização da ponta do braço
+- A base do braço (a origem do primeiro vetor) está em (0,0), que é o ponto médio da imagem
+- #teste O braço pode ser reconfigurado passo a passo girando qualquer um ou todos os links em uma unidade
+	- Incidindo em um custo total de reconfiguração igual à raiz quadrada do número de links alterados
+	- Além disso, incorre em um custo de cor igual à soma das diferenças absolutas nos componentes de cor de uma etapa para a próxima e multiplicada por um fator de escala de 3,0
 
+### Arquivo de Envio
 
-[Memetic Algorithm timetabling for non-commercial sport leagues](https://www.sciencedirect.com/science/article/abs/pii/S0377221703001024) GA
+- O arquivo de submissão deve conter uma seqüência de configurações com os componentes de cada vetor de deslocamento delimitado por ponto e vírgula, assim: x0 y0;x1 y1;...
+	- A primeira e a última configurações devem ser 64 0;-32 0;-16 0;-8 0;-4 0;-2 0;-1 0;-1 0.
+	- O conjunto de posições indicadas pelas configurações deve ser igual ao conjunto de pontos da imagem. (Em outras palavras, a ponta do braço deve se mover por toda a imagem.)
+	- Todos os números devem ser inteiros.
 
-[An Instance Data Repository for the Round-robin Sports Timetabling Problem](https://journals.sagepub.com/doi/abs/10.1177/0258042X20912108) Não entendi se usa um algoritmo ou se é apenas um repositório
+#### Exemplo
 
-[ITC2021 – Sports Timetabling Problem Description and File Format](https://www.sportscheduling.ugent.be/ITC2021/images/OrganizationITC2021_V5.pdf) Achei legal mas tbm não entendi se tem um algoritmo por traz
+##### Configuration
+```
+64 0;-32 0;-16 0;-8 0;-4 0;-2 0;-1 0;-1 0
+64 -1;-32 0;-16 0;-8 0;-4 0;-2 0;-1 0;-1 0
+64 -2;-32 0;-16 0;-8 0;-4 0;-2 0;-1 0;-1 0
+...
+64 0;-32 0;-16 0;-8 0;-4 0;-2 0;-1 0;-1 0
+```
 
-[A Survey of University Course Timetabling Problem: Perspectives, Trends and Opportunities](https://ieeexplore.ieee.org/abstract/document/9499056) Tem vários algoritmos sendo citados
+## Objetivo
 
-[Comparison of Bioinspired Algorithms Applied to the Timetabling Problem in Sport](https://www.sciencedirect.com/science/article/pii/S187705092030538X)
+- A tarefa é encontrar uma sequência de configurações com posições em todos os pontos da imagem da solução com um custo mínimo.
 
-### NBB
+## Kaggle
 
-[Regulamento NBB](https://lnb.com.br/wp-content/uploads/2022/09/Regulamento-NBB-2022-2023-VERSAO-FINAL.pdf) - Não achei algo sobre intervalo de dias entre jogos
+[Santa 2022 - The Christmas Card Conundrum](https://www.kaggle.com/competitions/santa-2022/overview)
 
-[Regulamento FIBA](https://www.cbb.com.br/wp-content/uploads/Regras-Oficiais-de-Basketball-FIBA-2020-Traduzida-para-Portugues.pdf) - Não achei algo sobre intervalo de dias entre jogos
+[Getting Started with Santa 2022](https://www.kaggle.com/code/ryanholbrook/getting-started-with-santa-2022/notebook)
 
-[Tabela Flamengo](https://lnb.com.br/nbb/tabela-de-jogos/?season%5B%5D=71&team%5B%5D=NDA%3D) - Intervalo mínimo de 2 dias
+[Winner](https://www.kaggle.com/competitions/santa-2022/discussion/379167)
 
-### Artigos (constructive heuristics for TTP)
-
-+ [Heuristics for the mirrored traveling tournament problem](https://reader.elsevier.com/reader/sd/pii/S0377221705007368?token=7ABA0E6A1F827C94844D5343F930D01A0CAAE5D12A1325A00030CD1756D3F82E30FFFE204299E5CDC8D4E7461BAFC52B&originRegion=us-east-1&originCreation=20221125212122)
-+ [A Constructive Heuristic for the Travelling Tournament Problem](https://patatconference.org/patat2006/proceedings/3_26.pdf)
-+ [Sports scheduling and other topics in sports analytics: a survey with special reference to Latin America](https://link.springer.com/content/pdf/10.1007/s11750-020-00576-9.pdf)
+[GitHub Winner](https://github.com/chettub/santa2022)
