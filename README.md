@@ -16,6 +16,7 @@
 - A base do braço (a origem do primeiro vetor) está em (0,0), que é o ponto médio da imagem
 - **O braço pode ser reconfigurado passo a passo girando qualquer um ou todos os links em uma unidade** <a name="peso"></a>
 	- Incidindo em um custo total de reconfiguração igual à raiz quadrada do número de links alterados
+		![image](https://user-images.githubusercontent.com/31144766/227238534-54ee6943-3909-433d-93a5-cabea8911b80.png)
 	- Além disso, incorre em um custo de cor igual à soma das diferenças absolutas nos componentes de cor de uma etapa para a próxima e multiplicada por um fator de escala de 3,0
 
 ### Arquivo de Envio
