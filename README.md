@@ -1,5 +1,8 @@
 # TCC-Experimental-study-of-optimization-algorithms
 
+## Artigo
+[TCC - Estudo experimental de algoritmos de otimização](https://www.overleaf.com/read/fmjvjtxrfykw)
+
 ## Dados sobre o problema
 
 - Braço robótico de 8 eixos que pode imprimir um pixel do cartão por vez
