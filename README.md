@@ -3,6 +3,9 @@
 ## Artigo
 [TCC - Estudo experimental de algoritmos de otimização](https://www.overleaf.com/read/fmjvjtxrfykw)
 
+## Git Repository
+[TSP generator](https://github.com/AlexanderChiudini/TSP_static_upper_diag_row_generator){:target="_blank"}
+
 ## Dados sobre o problema
 
 - Braço robótico de 8 eixos que pode imprimir um pixel do cartão por vez
