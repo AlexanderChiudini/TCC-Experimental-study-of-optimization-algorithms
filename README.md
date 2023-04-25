@@ -4,7 +4,7 @@
 [TCC - Estudo experimental de algoritmos de otimização](https://www.overleaf.com/read/fmjvjtxrfykw)
 
 ## Git Repository
-[TSP generator](https://github.com/AlexanderChiudini/TSP_static_upper_diag_row_generator){:target="_blank"}
+[TSP generator](https://github.com/AlexanderChiudini/TSP_static_upper_diag_row_generator)
 
 ## Dados sobre o problema
 
